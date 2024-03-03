@@ -46,11 +46,13 @@ A RESTful API (Representational State Transfer API) is a web-based architectural
 - REST APIs allow developers to build scalable, interoperable, and stateless web services that can be consumed by various clients, such as web browsers, mobile apps, and other backend systems. They promote a simple and uniform architecture, making it easier to integrate and interact with diverse systems, and they are widely used in modern web development for building APIs that serve data and functionalities to different applications.
 
 ### REST API conventions
-| Term | Description |
-| --- | --- |
-| Resource | The core concept in any RESTful API is resource. A resource is an object with a type, associated data, relationships to other resources, and a set of methods that operate on it. |
-| Endpoint | One end of a communication channel in an API, typically identified by a URI, where requests are sent to access resource or trigger actions from web applications or servers, with responses returned to complete the interaction. Basically, the place that APIs send requests and where the resource lives, is called an endpoint. |
-| Collection | Resources can be organized into collections, each of which is uniform, containing only a single type of resource, and unordered. |
+
+| Term       | Description                                                                                                                                                                                                                                                                                                                         |
+|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Resource   | The core concept in any RESTful API is resource. A resource is an object with a type, associated data, relationships to other resources, and a set of methods that operate on it.                                                                                                                                                   |
+| Endpoint   | One end of a communication channel in an API, typically identified by a URI, where requests are sent to access resource or trigger actions from web applications or servers, with responses returned to complete the interaction. Basically, the place that APIs send requests and where the resource lives, is called an endpoint. |
+| Collection | Resources can be organized into collections, each of which is uniform, containing only a single type of resource, and unordered.                                                                                                                                                                                                    |
+
 
 - The endpoint refers directly to the resource and the HTTP verbs (e.g. `GET`, `POST`, `PUT`, `DELETE`) specify the actions.
 - Typically takes 2 URI per resource
