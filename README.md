@@ -1,2 +1,3 @@
 # Toolbox
-Guides for common tools/software used in modern web applications.
+
+***AKA SE Toolbox*** is a set of guides for common tools/software used in modern web application development and deployment
