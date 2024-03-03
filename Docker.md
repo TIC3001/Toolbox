@@ -1,4 +1,4 @@
-# CS3219 SE Toolbox - Containerization
+# Toolbox - Containerization
 The CS3219 SE Toolbox is a collection of guides and resources to help you get started with the various tools and technologies used CS3219 - Software Engineering Principles and Patterns. 
 
 The guide and resources below  focuses on containerization using Docker.
