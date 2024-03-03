@@ -1,4 +1,4 @@
-# CS3219 Guide to REST APIs
+# Toolbox: REST APIs and MongoDB
 
 ## Introduction
 
