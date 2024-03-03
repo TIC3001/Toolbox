@@ -2,9 +2,11 @@
 
 ## Introduction
 
-Welcome to CS3219! This guide will introduce you to REST APIs and how to implement them by walking you through the development of a full stack address book application with CRUD functionalities (similar to CS2103, but with Javascript instead of Java).
+This guide will introduce you to REST APIs and how to implement them by walking you through the development of a full stack address book application with CRUD functionalities with Javascript.
 
-![5E11A61D-6BAC-4269-974E-3D85946295DC](https://github.com/Punpun1643/CS3219-labs/assets/60144099/bc88876b-1df8-4835-b9d4-bd6961b3f782)
+<p align= "center">
+<img src="images/addressbook.jpeg" width="400">
+</p>
 
 ### Tech Stack
 
@@ -61,16 +63,17 @@ A RESTful API (Representational State Transfer API) is a web-based architectural
 
 ### 1. Fork and clone the starter repository
 
-We have created a starter repository for this guide [here](https://github.com/CS3219-AY2324S1/SE-Toolbox-REST-API-MongoDB.git). This starter repository contains the code for the frontend of the application.
+We have created a starter repository for this guide [here](https://github.com/TIC3001/Toolbox-REST-SampleCode.git). This starter repository contains the code for the frontend of the application.
 
 Fork this starter repository to your own Github account, then open your terminal and clone the forked repository into a directory of your choice.
 
 ```
 // navigate to directory of your choice
 cd <path to directory of your choice>
+NOTE: in this example we will use the director to be Toolbox-REST-SampleCode
 
 // clone the starter repository
-git clone https://github.com/<your github username>/SE-Toolbox-REST-API-MongoDB.git
+git clone https://github.com/<your github username>/Toolbox-REST-SampleCode.git
 ```
 
 ### 2. Install the required dependencies
@@ -79,7 +82,7 @@ Now that you have cloned the starter repository, you will need to navigate to it
 
 ```
 // navigate to starter repository
-cd SE-Toolbox-REST-API-MongoDB
+cd Toolbox-REST-SampleCode
 
 // install dependencies
 npm install
@@ -222,7 +225,7 @@ In your `backend` directory, create a file called `.env`. You can do so via the 
 Then, add the following content to your `.env` file:
 ```
 PORT=8080
-MONGODB_URI="mongodb://127.0.0.1:27017/cs3219-rest-api-example"
+MONGODB_URI="mongodb://127.0.0.1:27017/rest-api-example"
 ```
 Here, you are specifying the connection string that can be used to connect to your database. The format for this connection string is `<standard_prefix>://<host>:<port>/<database_name>`. In this example:
 
@@ -316,7 +319,7 @@ This is what the folder structure of the `backend` directory will look like by t
 - `models` contains your mongoose Models, which essentially act as an interface to interact with different schemas in the MongoDB database.
 - `routes` contains files that specify the endpoints supported by the backend server.
 
-![backend-structure](https://github.com/Punpun1643/CS3219-labs/assets/60144099/7abd018e-9807-4a96-91ee-613d18b3c602)
+![backend-structure](images/backendStructure.png)
 
 You can create these 3 new folders via your IDE or by executing the following commands:
 
@@ -433,11 +436,11 @@ To test whether the endpoint works correctly, you can use Postman App to make a 
 
 The output should be as follows if there is no address object in the MongoDB database:
 
-![2C62B77F-267D-4EEC-9D84-ABC86CD7C314](https://github.com/Punpun1643/CS3219-labs/assets/60144099/a6ada0a4-e38f-48cf-8b0a-11f8ceb3b200)
+![2C62B77F-267D-4EEC-9D84-ABC86CD7C314](images/outputNoAddress.jpeg)
 
 However, if you were to manually add an address first, it would look as follows:
 
-![8F778A9A-2511-4588-BC36-844F25992B1C](https://github.com/Punpun1643/CS3219-labs/assets/60144099/fee6ff86-f10d-4ce8-b019-9715de4d44dc)
+![8F778A9A-2511-4588-BC36-844F25992B1C](images/outputAddress.jpeg)
 
 ### 2. `POST` - Add a new address
 
@@ -646,7 +649,7 @@ In this example, the ID we want to delete is `64c7dd52c95846d56c68e07e`. Note th
 
 ## Integrating with the Frontend
 
-> 📝 **Note:** For this section, you will be working in the root directory of the repository as you will be making changes in the frontend code. Make sure to navigate such that your working directory is `<directory of your choice>/SE-Toolbox-REST-API-MongoDB`.
+> 📝 **Note:** For this section, you will be working in the root directory of the repository as you will be making changes in the frontend code. Make sure to navigate such that your working directory is `<directory of your choice>/Toolbox-REST-SampleCode`.
 
 You will need to install [axios](https://www.npmjs.com/package/axios), a useful tool that will allow you to make requests to the backend server. You can do so by executing the command `npm install axios`.
 
